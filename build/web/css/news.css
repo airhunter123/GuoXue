@@ -1,0 +1,43 @@
+.Menubox {  
+width:101.5%;  
+height:28px;  
+line-height:28px;  
+}  
+.Menubox ul{  
+margin:0px;  
+padding:0px;  
+}  
+.Menubox li{  
+ float:left;  
+ display:block;  
+ cursor:pointer;  
+ color: #fef4e9;  
+ border: 3px solid #252c24;  
+ background-color: #252c24;
+ border-radius: 10px 10px 0px 0px;
+ color:#edb02b;
+ width: 24%;
+ height: 30px;
+ font-family: "微软雅黑";
+ font-size: 15px;
+ line-height: 240%;
+ }  
+.Menubox li.hover{  
+ padding:0px; 
+ border:3px solid #f47a20;  
+ border-radius: 10px 10px 0px 0px;
+ background-color:#f47a20; 
+ color: #ffffff;
+ font-family: "微软雅黑";
+ font-size: 18px;
+ line-height: 190%;
+}  
+.Contentbox{  
+ clear:both;  
+ margin-top:0px;  
+ border:3px solid #f47a20;  
+ border-radius: 0px 0px 5px 5px;
+ height:230px;  
+ text-align:center;  
+ padding-top:8px;  
+}  

@@ -1,0 +1,19 @@
+<!--
+* { font-family:simsun; margin:0px; padding:0px;}
+ul, li { list-style:none;}
+a{ text-decoration:none; color:#3381BF;}
+a:hover{ text-decoration:underline;}
+#movie_rank { height:269px;}
+.box2 { border:3px solid #f47a20;border-radius:5px; text-align:left; overflow:hidden; color:#f47a20; text-align:left;margin-right: 15px;}
+.box2 h2{ background:#f47a20; height:30px; line-height:30px; overflow-y:hidden; border-bottom:1px solid #f47a20; color: #fee8a5; font-size:18px; font-family: "微软雅黑"; padding:0px 8px;}
+.box2 h2 a.more{ float:right; text-decoration:underline; background:url() no-repeat 100% -123px; padding-right:8px; font-weight:normal;}
+.box2 h2 a{ margin-left:5px; color:#fee8a5;margin-left: 200px;font-family: "微软雅黑";font-size: 15px}
+.box2 .inner{ padding:8px; line-height:18px; overflow:hidden; color:#3083C7;}
+.box2 a{ color:#3083C7; white-space:nowrap;}
+.rank_list{ line-height:14px; margin:auto; padding-top:5px;}
+.rank_list li{ height:18px; margin-bottom:5px; width:290px; padding-left:20px; white-space:nowrap; overflow:hidden; position:relative;font-size:16px; font-family: "微软雅黑"; }
+.rank_list li.top3 em{ background:#CC3333; border:1px solid #f47a20; color:#fee8a5; font-family: "微软雅黑";}
+.rank_list em{ position:absolute; left:0; top:0; width:20px; height:20px; border:1px solid #b1841f; color:#fee8a5; font-size:10px; font-family:"微软雅黑"; background:#f47a20; text-align:center; line-height:12px; overflow:hidden;vertical-align:middle;}
+.rank_list span{ position:absolute; width:60px; color:#B7B7B7; text-align:right; height:14px; background:#fff; left:110px;}
+#movie_rank .rank_list span{ position:absolute; width:40px; color:#B7B7B7; text-align:right; height:14px; background:#fff; left:260px;}
+-->

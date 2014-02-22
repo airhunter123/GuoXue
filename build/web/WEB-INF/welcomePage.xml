@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+         
+         <bean id="WelcomeHead" class="PageControl.WelcomePage.WelcomeHead">
+           <property name="itemTop">
+             <list>
+               <value>${itemTop1}</value>
+               <value>${itemTop2}</value>
+               <value>${itemTop3}</value>
+               <value>${itemTop4}</value>
+               <value>${itemTop5}</value>
+               <value>${itemSearch}</value>
+             </list>
+           </property>
+           <property name="itemTopHref">
+             <list>
+             <value>${itemTopHref1}</value>
+             <value>${itemTopHref2}</value>
+             <value>${itemTopHref3}</value>
+             <value>${itemTopHref4}</value>
+             <value>${itemTopHref5}</value>
+             </list>
+           </property>
+           <property name="itemMenu">
+             <list>
+             <value>${itemMenu1}</value>
+             <value>${itemMenu2}</value>
+             <value>${itemMenu3}</value>
+             <value>${itemMenu4}</value>
+             <value>${itemMenu5}</value>
+             <value>${itemMenu6}</value>
+             </list>
+           </property>
+           <property name="itemMenuHref">
+             <list>
+             <value>${itemMenuHref1}</value>
+             <value>${itemMenuHref2}</value>
+             <value>${itemMenuHref3}</value>
+             <value>${itemMenuHref4}</value>
+             <value>${itemMenuHref5}</value>
+             <value>${itemMenuHref6}</value>
+             </list>
+           </property>
+         </bean>
+         <bean id="WelcomePointPic" class="PageControl.WelcomePage.WelcomePointPic">
+           <property name="pointText">
+             <list>
+               <value>${pointText1}</value>
+               <value>${pointText2}</value>
+               <value>${pointText3}</value>
+               <value>${pointText4}</value>
+               <value>${pointText5}</value>
+             </list>
+           </property>
+           <property name="pointTextHref">
+             <list>
+               <value>${pointTextHref1}</value>
+               <value>${pointTextHref2}</value>
+               <value>${pointTextHref3}</value>
+               <value>${pointTextHref4}</value>
+               <value>${pointTextHref5}</value>
+             </list>
+           </property>
+         </bean>
+         
+         <bean id="WelcomeTopNews" class="PageControl.WelcomePage.WelcomeTopNews">
+           <property name="newsTitle">
+             <list>
+               <value>${newsTitle1}</value>
+               <value>${newsTitle2}</value>
+               <value>${newsTitleHref}</value>
+             </list>
+           </property>
+           <property name="news">
+             <list>
+               <value>${news1}</value>
+               <value>${news2}</value>
+               <value>${news3}</value>
+               <value>${news4}</value>
+               <value>${news5}</value>
+               <value>${news6}</value>
+               <value>${news7}</value>
+               <value>${news8}</value>
+               <value>${news9}</value>
+             </list>
+           </property>
+           <property name="newsHref">
+             <list>
+               <value>${newsHref1}</value>
+               <value>${newsHref2}</value>
+               <value>${newsHref3}</value>
+               <value>${newsHref4}</value>
+               <value>${newsHref5}</value>
+               <value>${newsHref6}</value>
+               <value>${newsHref7}</value>
+               <value>${newsHref8}</value>
+               <value>${newsHref9}</value>
+             </list>
+           </property>
+         </bean>
+       
+
+</beans>

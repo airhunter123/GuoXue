@@ -1,0 +1,55 @@
+ .orange {  
+    color: #fef4e9;  
+    border: solid 1px #da7c0c;  
+    background: #f78d1d;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));  
+    background: -moz-linear-gradient(top,  #faa51a,  #f47a20);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f27c22', endColorstr='#f47a20');  
+    width: 158px;
+    height: 40px;
+    font-family: "微软雅黑";
+    font-size: 19px;
+}  
+.orange:hover {  
+    background: #f47c20;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));  
+    background: -moz-linear-gradient(top,  #f88e11,  #f06015);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#edb02b', endColorstr='#f06015');  
+}  
+.orange:active {  
+    color: #fcd3a5;  
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));  
+    background: -moz-linear-gradient(top,  #f47a20,  #faa51a);  
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');  
+}
+
+.buttonStyle {  
+    width: 100px;
+    height: 28px;
+    vertical-align:middle;
+    
+   
+}  
+
+.buttonStyle {
+    background-color: #f47a20;
+    border-color: #edb02b;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    cursor: pointer; 
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    }

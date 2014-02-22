@@ -1,0 +1,10 @@
+SMAP
+newsListTest_jsp.java
+JSP
+*S JSP
+*F
++ 0 newsListTest.jsp
+testPage/newsListTest.jsp
+*L
+1,135:44
+*E
