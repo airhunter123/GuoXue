@@ -1,0 +1,43 @@
+.ViedoMenubox {  
+width:101.5%;  
+height:28px;  
+line-height:28px;  
+}  
+.VideoMenubox ul{  
+margin:0px;  
+padding:0px;  
+}  
+.VideoMenubox li{  
+float:left;  
+display:block;  
+cursor:pointer;  
+color: #fef4e9;  
+border: 3px solid #252c24;  
+background-color: #252c24;
+border-radius: 0px 10px 10px 0px;
+writing-mode: lr-tb;
+letter-spacing: 100px;
+color:#edb02b;
+width: 30px;
+height: 110px;
+font-family: "微软雅黑";
+font-size: 18px;
+line-height: 1;
+}  
+.VideoMenubox li.hover{  
+padding:0px; 
+border:3px solid #f47a20;  
+border-radius: 0px 10px 10px 0px;
+background-color:#f47a20; 
+color: #ffffff;
+font-family: "微软雅黑";
+}  
+.VideoContentbox{  
+margin-top:0px;  
+border:3px solid #f47a20;  
+border-radius: 5px 0px 0px 5px;
+height:218px;
+width: 580px;
+text-align:center;  
+padding-top:8px;
+}  
