@@ -1,5 +1,5 @@
 <%-- 
-    网站首页   你好啊
+    网站首页
 --%>
 <%@page import="PageControl.WelcomePage.WelcomeRemark"%>
 <%@page import="PageControl.WelcomePage.WelcomeNews"%>
