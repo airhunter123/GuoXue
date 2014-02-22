@@ -274,6 +274,45 @@
                  </list>
              </property>
          </bean>
+         <bean id="WelcomeVideo" class="PageControl.WelcomePage.WelcomeVideo">
+             <property name="videoTopic">
+                 <list>
+                     <value>${videoTopic1}</value>
+                     <value>${videoTopic2}</value>
+                     <value>${videoTopic3}</value>
+                     <value>${videoTopicHref1}</value>
+                     <value>${videoTopicHref2}</value>
+                 </list>
+             </property>
+             <property name="videoTitle">
+                 <list>
+                     <value>${videoTitle1}</value>
+                     <value>${videoTitle2}</value>
+                     <value>${videoTitle3}</value>
+                     <value>${videoTitle4}</value>
+                     <value>${videoTitle5}</value>
+                     <value>${videoTitle6}</value>
+                     <value>${videoTitle7}</value>
+                     <value>${videoTitle8}</value>
+                 </list>
+             </property>
+             <property name="videoHref">
+                 <list>
+                     <value>${videoHref1}</value>
+                     <value>${videoHref2}</value>
+                     <value>${videoHref3}</value>
+                     <value>${videoHref4}</value>
+                 </list>
+             </property>
+             <property name="pic">
+                 <list>
+                     <value>${pic1}</value>
+                     <value>${pic2}</value>
+                     <value>${pic3}</value>
+                     <value>${pic4}</value>
+                 </list>
+             </property>
+         </bean>
        
 
 </beans>

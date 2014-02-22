@@ -1,6 +1,7 @@
 <%-- 
     网站首页
 --%>
+<%@page import="PageControl.WelcomePage.WelcomeVideo"%>
 <%@page import="PageControl.WelcomePage.WelcomeRemark"%>
 <%@page import="PageControl.WelcomePage.WelcomeNews"%>
 <%@page import="PageControl.WelcomePage.WelcomeTopNews"%>
@@ -42,6 +43,9 @@
    
    WelcomeRemark welcomeRemark=(WelcomeRemark)context.getBean("WelcomeRemark");
    request.setAttribute("welcomeRemark", welcomeRemark);
+   
+   WelcomeVideo welcomeVideo=(WelcomeVideo)context.getBean("WelcomeVideo");
+   request.setAttribute("welcomeVideo", welcomeVideo);
    %>
   <body class="style1">
     <div id="all"class="style2">
@@ -194,16 +198,16 @@
                     <table style="width: 100%;margin-top: 5%">
                       <tr>
                         <td>
-                          <a class="textStyle" href="#">
+                          <a class="textStyle" href=${welcomeVideo.pic[1]}>
                             <img src="../pic/video&pic/1.jpg" style="width:70%;height: 140px;border-color: #f47a20"/><br>
-                          图1</a><br>
+                          ${welcomeVideo.pic[0]}</a><br>
                         </td>  
                         <td style="width: 50%;text-align: center;">
                           <ul>
-                            <li><a class="textStyle" href="#">内容1<br>概述...</a></li>
-                            <li><a class="textStyle" href="#">内容2<br>概述...</a></li>
+                            <li><a class="textStyle" href=${welcomeVideo.videoHref[0]}>${welcomeVideo.videoTitle[0]}<br>${welcomeVideo.videoTitle[1]}</a></li>
+                            <li><a class="textStyle" href=${welcomeVideo.videoHref[1]}>${welcomeVideo.videoTitle[2]}<br>${welcomeVideo.videoTitle[3]}</a></li>
                           </ul><br>
-                           <a class="textStyle" href="#">更多></a>
+                           <a class="textStyle" href=${welcomeVideo.videoTopic[3]}>${welcomeVideo.videoTopic[2]}</a>
                         </td>
                       </tr>
                     </table>
@@ -212,16 +216,16 @@
                     <table style="width: 100%;margin-top: 5%">
                       <tr>
                         <td>
-                          <a class="textStyle" href="#">
+                          <a class="textStyle" href=${welcomeVideo.pic[3]}>
                             <img src="../pic/video&pic/2.jpg" style="width:70%;height: 140px;border-color: #f47a20"/><br>
-                          图2</a><br>
+                          ${welcomeVideo.pic[2]}</a><br>
                         </td>  
                         <td style="width: 50%;text-align: center;">
                           <ul>
-                            <li><a class="textStyle" href="#">内容3<br>概述...</a></li>
-                            <li><a class="textStyle" href="#">内容4<br>概述...</a></li>
+                            <li><a class="textStyle" href=${welcomeVideo.videoHref[2]}>${welcomeVideo.videoTitle[4]}<br>${welcomeVideo.videoTitle[5]}</a></li>
+                            <li><a class="textStyle" href=${welcomeVideo.videoHref[3]}>${welcomeVideo.videoTitle[6]}<br>${welcomeVideo.videoTitle[7]}</a></li>
                           </ul><br>
-                           <a class="textStyle" href="#">更多></a>
+                           <a class="textStyle" href=${welcomeVideo.videoTopic[4]}>${welcomeVideo.videoTopic[2]}</a>
                         </td>
                       </tr>
                     </table>
@@ -231,8 +235,8 @@
             <td>
                <div class="VideoMenubox">  
                     <ul>  
-                    <li id="video1" onmouseover="setTab('video',1,2)"  class="hover"><br>国学图库</li><br>  
-                    <li id="video2" onmouseover="setTab('video',2,2)" ><br>国学视频</li>  
+                    <li id="video1" onmouseover="setTab('video',1,2)"  class="hover"><br>${welcomeVideo.videoTopic[0]}</li><br>  
+                    <li id="video2" onmouseover="setTab('video',2,2)" ><br>${welcomeVideo.videoTopic[1]}</li>  
                     </ul>  
                 </div>               
             </td>
