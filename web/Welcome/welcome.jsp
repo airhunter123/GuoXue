@@ -53,7 +53,7 @@
       <!--网页头部开始-->
     <div id="top" class="style3">
       <span>
-        <a href="welcome.jsp" onclick="addHome()" class="textStyle">设为首页</a>
+        <a href="..\Welcome\welcome.jsp" onclick="addHome()" class="textStyle">设为首页</a>
         <a class="textStyle" href=${welcomeHead.itemTopHref[0]} >${welcomeHead.itemTop[0]}</a>
         <a class="textStyle" href=${welcomeHead.itemTopHref[1]}>${welcomeHead.itemTop[1]}</a>
         <a class="textStyle" href=${welcomeHead.itemTopHref[2]}>${welcomeHead.itemTop[2]}</a>
@@ -62,9 +62,7 @@
         &nbsp; &nbsp; &nbsp;
       </span><br>
       <table id="title" class="style4"><!--标题-->
-        <tr>
-          <td></td>
-        </tr>
+        <tr><td></td></tr>
       </table>
       
       <!--站内搜索与时间-->
