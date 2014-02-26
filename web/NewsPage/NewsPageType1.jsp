@@ -75,18 +75,34 @@
     </div><br>
     
     <!--主内容区 开始-->
-    <div>
-        
+    <div class="textStyle" style="text-align: center;width:80%;
+         height: 2000px;margin: auto;word-wrap:break-word ;">
+        <!--word-wrap:break-word控制文本超过控件长度就自动换行-->
+        <h1>标题</h1>
+        <h2>作者</h2>
+        <p>
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaaa
+            aaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <p>bbbbbbbbbbbbbb</p>
     </div><br>
     <!--主内容区 结束-->
     
     <hr class="line"><br>
+    <div style="text-align: center">
     <span class="textStyle" style="font-size: 5px;">
          ${welcomeRemark.remark[0]}<br>
          ${welcomeRemark.remark[1]}<br>
          ${welcomeRemark.remark[2]}<br>
          ${welcomeRemark.remark[3]}<br><br>
      </span>
+    </div>
     </div>
     </body>
     <script language="JavaScript"> 
