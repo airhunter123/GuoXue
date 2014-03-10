@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 2014-3-4 11:46:20 by Hibernate Tools 3.2.1.GA -->
+<!-- Generated 2014-3-7 14:48:12 by Hibernate Tools 3.2.1.GA -->
 <hibernate-mapping>
     <class name="POJO.Article" table="article" catalog="guoxue">
-        <id name="uuid" type="int">
-            <column name="UUID" />
+        <id name="uuid" type="string">
+            <column name="UUID" length="50" />
             <generator class="assigned" />
         </id>
         <property name="title" type="string">
-            <column name="TITLE" not-null="true" />
+            <column name="TITLE" length="65535" not-null="true" />
         </property>
         <property name="author" type="string">
             <column name="AUTHOR" not-null="true" />
@@ -21,25 +21,28 @@
             <column name="CONTEXT" not-null="true" />
         </property>
         <property name="img" type="string">
-            <column name="IMG" />
+            <column name="IMG" length="65535" />
         </property>
-        <property name="gategory" type="int">
-            <column name="GATEGORY" not-null="true" />
+        <property name="gategory" type="string">
+            <column name="GATEGORY" length="65535" not-null="true" />
         </property>
-        <property name="format" type="int">
-            <column name="FORMAT" not-null="true" />
+        <property name="format" type="string">
+            <column name="FORMAT" length="65535" not-null="true" />
         </property>
-        <property name="releasetime" type="timestamp">
-            <column name="RELEASETIME" length="19" not-null="true" />
+        <property name="releasetime" type="string">
+            <column name="RELEASETIME" length="65535" not-null="true" />
         </property>
         <property name="editor" type="string">
-            <column name="EDITOR" not-null="true" />
+            <column name="EDITOR" length="65535" not-null="true" />
         </property>
         <property name="origin" type="string">
-            <column name="ORIGIN" />
+            <column name="ORIGIN" length="65535" />
         </property>
         <property name="comment" type="string">
             <column name="COMMENT" length="65535" />
+        </property>
+        <property name="used" type="string">
+            <column name="USED" length="11" not-null="true" />
         </property>
     </class>
 </hibernate-mapping>

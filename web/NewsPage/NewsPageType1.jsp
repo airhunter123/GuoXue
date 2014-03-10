@@ -2,6 +2,7 @@
     这是本站最基本的一个新闻页面
 --%>
 
+<%@page import="POJO.Article"%>
 <%@page import="PageControl.WelcomePage.WelcomeRemark"%>
 <%@page import="PageControl.WelcomePage.WelcomeHead"%>
 <%@page import="org.springframework.context.support.FileSystemXmlApplicationContext"%>
@@ -78,17 +79,10 @@
     <div class="textStyle" style="text-align: center;width:80%;
          height: 2000px;margin: auto;word-wrap:break-word ;">
         <!--word-wrap:break-word控制文本超过控件长度就自动换行-->
-        <h1>标题</h1>
-        <h2>作者</h2>
-        <p>
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaaa
-            aaaaaaaaaaaaaaaaaaaaaaa
+        <h1 style="font-size: 20px;">${article.title}</h1>
+        <h2>${article.author}</h2>
+        <p style="font-size: 16px;">
+            ${article.context}
         </p>
         <p>bbbbbbbbbbbbbb</p>
     </div><br>

@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!--设定struts风格为简单，既不产生额外的html代码-->
+    <constant name="struts.ui.theme" value="simple"></constant>
+    <include file="example.xml"/>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="articleInput" class="WebManager.ArticleInput">
+            <result name="ArticleInput" type="redirect">/WebManager/ArticleManager/ArticleInput.jsp</result>
+        </action><!--设定跳转类型为重定向，地址栏会变化！-->
+        
+        <action name="articleGetter" class="WebRun.ArticleGetter">
+            <!--<result name="Transfer" type="redirectAction">
+                <param name="actionName">articleShow</param>
+                <param name="article">${article}</param>
+            </result>-->
+            <result name="Transfer" type="redirect">articleShow.action</result>
+        </action>
+        
+        <action name="articleShow" class="WebRun.ArticleShow">
+            <result name="NewsPage1" type="redirect">/NewsPage/NewsPageType1.jsp</result>
+        </action>
+        
+    </package>
+</struts>
