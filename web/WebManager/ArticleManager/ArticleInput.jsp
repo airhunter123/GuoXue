@@ -15,6 +15,7 @@
         <link href="../ManagerCss/ArticleInput.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>文档录入</title>
+        <script type="text/javascript" src="../../ckeditor/ckeditor.js"></script>
     </head>
     <%
     String path=application.getRealPath("//");//获取当前项目的物理路径
@@ -92,10 +93,12 @@
                 <tr>
                     <td valign="top"><span>简介：</span></td><!--valign控制文字位置-->
                     <td><s:textarea name="article.introduction" cssClass="inputArea1"></s:textarea></td>
+                    <script type="text/javascript">CKEDITOR.replace('article.introduction');</script>
                 </tr>
                 <tr>
                     <td valign="top">正文：</td>
-                    <td valign="top"><s:textarea id="context" name="article.context" cssClass="inputArea2"></s:textarea>&nbsp;*</td>
+                    <td valign="top"><s:textarea id="context" name="article.context" cssClass="inputArea2"></s:textarea></td>
+                    <script type="text/javascript">CKEDITOR.replace('article.context');</script>
                 </tr>
                 
                 <caption align="bottom" style="background-color: #252c24;margin-top: 20px;">
@@ -109,7 +112,6 @@
         function submitCheck(){
             var title=document.getElementById("title");
             var author=document.getElementById("author");
-            var context=document.getElementById("context");
             var editor=document.getElementById("editor");
             var message="";
             if(title.value==""){
@@ -120,9 +122,6 @@
             }
             if(editor.value==""){
                 message=message+"编辑为空！";
-            }
-            if(context.value==""){
-                message=message+"正文为空！";
             }
             if(message==""){
                 return true;

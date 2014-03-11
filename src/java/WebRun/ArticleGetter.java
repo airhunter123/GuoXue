@@ -19,7 +19,7 @@ public class ArticleGetter {
         SessionFactory sf=HibernateFactory.getSessionFactory();
         Session session=sf.openSession();
         session.beginTransaction();
-        article=(Article) session.get(Article.class, "13446949065795");
+        article=(Article) session.get(Article.class, "49417307283607");
         Hibernate.initialize(article);
         session.getTransaction().commit();
         session.close();

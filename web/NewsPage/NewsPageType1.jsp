@@ -16,7 +16,7 @@
         <link href="../css/button.css" rel="stylesheet" type="text/css"/>
         <script language="JavaScript" src="../script/welcomePageScript.js">
         </script>
-        <title>新闻</title>
+        <title>${article.title}</title>
     </head>
     <%
         String path=application.getRealPath("//");//获取当前项目的物理路径
@@ -77,14 +77,22 @@
     
     <!--主内容区 开始-->
     <div class="textStyle" style="text-align: center;width:80%;
-         height: 2000px;margin: auto;word-wrap:break-word ;">
+         margin: auto;word-wrap:break-word ;">
         <!--word-wrap:break-word控制文本超过控件长度就自动换行-->
         <h1 style="font-size: 20px;">${article.title}</h1>
         <h2>${article.author}</h2>
-        <p style="font-size: 16px;">
+        <div style="font-size: 16px;text-align: left;font-family: '宋体'">
+            <!--设为宋体是为了解决cheditor段首只空一格的问题 -->
             ${article.context}
-        </p>
-        <p>bbbbbbbbbbbbbb</p>
+        </div>
+    </div><br>
+    <hr class="line" style="width: 80%;height: 2px"><br>
+    <div style="text-align: right;margin-right:10%;color: #edb02b;
+         font-family: '微软雅黑';font-size: 10px">
+        发布：${article.releasetime}
+        &nbsp;&nbsp;&nbsp;&nbsp;编辑：${article.editor}
+        &nbsp;&nbsp;&nbsp;&nbsp;来源：${article.origin}<br>
+        ${article.comment}
     </div><br>
     <!--主内容区 结束-->
     
