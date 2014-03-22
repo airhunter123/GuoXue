@@ -80,3 +80,10 @@
     width: 180px;
     height: 35px;
     }
+    .line{
+        width:70%;
+        height: 2px;
+        border-color: #f47a20;
+        background-color: #f47a20;
+        border-radius: 6px;
+    }

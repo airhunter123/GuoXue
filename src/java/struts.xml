@@ -24,5 +24,8 @@
             <result name="NewsPage1" type="redirect">/NewsPage/NewsPageType1.jsp</result>
         </action>
         
+        <action name="changeWelcomePage" class="WebManager.ChangeWelcomePage">
+            <result name="WelcomePage" type="redirect">/Welcome/welcome.jsp</result>
+        </action>
     </package>
 </struts>

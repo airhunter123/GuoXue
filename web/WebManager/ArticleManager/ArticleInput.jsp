@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="../ManagerCss/ArticleInput.css" rel="stylesheet" type="text/css"/>
+        <link href="../ManagerCss/ManagerCss.css" rel="stylesheet" type="text/css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>文档录入</title>
         <script type="text/javascript" src="../../ckeditor/ckeditor.js"></script>
@@ -102,13 +102,16 @@
                 </tr>
                 
                 <caption align="bottom" style="background-color: #252c24;margin-top: 20px;">
-                    <s:submit value="提 交" cssClass="buttonStyle"></s:submit>&nbsp;&nbsp;&nbsp;
-                    <button class="buttonStyle">取 消</button>
+                    <s:submit value="提 交" cssClass="buttonStyle" style="margin-left: 80px"></s:submit>
+                    <button class="buttonStyle" style="margin-left: 150px" onclick="test()">取 消</button>
                 </caption>
             </table>
         </s:form>
     </body>
     <script language="JavaScript">
+        function test(){
+            alert("ok!");
+        }
         function submitCheck(){
             var title=document.getElementById("title");
             var author=document.getElementById("author");
