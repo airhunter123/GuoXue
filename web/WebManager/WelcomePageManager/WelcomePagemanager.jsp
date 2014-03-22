@@ -180,10 +180,11 @@
         </div>
         <div style="text-align: center">
         <form id="form" method="post" action="changeWelcomePage">
+            
+        </form>
             <button class="buttonStyle" onclick="formSubmit()">提交</button>
             <button class="buttonStyle" style="margin-left: 200px">取 消</button>
             <br><br><br><br>
-        </form>
         </div>
     </body>
     <script language="JavaScript">
