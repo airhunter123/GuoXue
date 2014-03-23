@@ -1,5 +1,5 @@
 <%-- 
-    这是本站最基本的一个新闻页面
+    视频页面，来自土豆
 --%>
 
 <%@page import="POJO.Article"%>
@@ -16,7 +16,7 @@
         <link href="../css/button.css" rel="stylesheet" type="text/css"/>
         <script language="JavaScript" src="../script/welcomePageScript.js">
         </script>
-        <title>${article.title}</title>
+        <title>视频</title>
     </head>
     <%
         String path=application.getRealPath("//");//获取当前项目的物理路径
@@ -76,23 +76,35 @@
     </div><br>
     
     <!--主内容区 开始-->
-    <div class="textStyle" style="text-align: center;width:80%;
-         margin: auto;word-wrap:break-word ;">
-        <!--word-wrap:break-word控制文本超过控件长度就自动换行-->
-        <h1 style="font-size: 20px;">${article.title}</h1>
-        <h2 style="font-size: 15px">${article.author}</h2>
-        <div style="font-size: 16px;text-align: left;font-family: '宋体'">
-            <!--设为宋体是为了解决cheditor段首只空一格的问题 -->
-            ${article.context}
-        </div>
+    <hr class="line" style="width: 90%;height: 2px"><br>
+    <div class="textStyle" style="text-align: center;width:90%;margin: auto;font-family:'微软雅黑'">
+        <h1 style="font-size: 20px">视频标题</h1>
+        <h2 style="font-size: 15px">作者</h2>
+        <table cellpadding="0" cellspacing="15" style="980px;">
+            <tr>
+              <td style="width: 60%;border:solid #f47a20 5px;border-radius: 6px">
+               <embed src="http://www.tudou.com/v/ypMUptZby2c/&bid=05&resourceId=0_05_05_99/v.swf" 
+               type="application/x-shockwave-flash" allowscriptaccess="always" 
+               allowfullscreen="true" wmode="opaque" width="480" height="400"></td>
+              <td style="border:solid #f47a20 5px;
+                  border-radius: 6px;">
+                  <div style="margin-left: 10px;width:300px;
+                       font-size: 16px;word-wrap:break-word;
+                  text-align: left;font-family: '宋体';height: 380px">
+                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                  </div>
+              </td>
+            </tr>
+        </table>
+        
     </div><br>
-    <hr class="line" style="width: 80%;height: 2px"><br>
+    <hr class="line" style="width: 90%;height: 2px"><br>
     <div style="text-align: right;margin-right:10%;color: #edb02b;
          font-family: '微软雅黑';font-size: 10px">
-        发布：${article.releasetime}
-        &nbsp;&nbsp;&nbsp;&nbsp;编辑：${article.editor}
-        &nbsp;&nbsp;&nbsp;&nbsp;来源：${article.origin}<br>
-        ${article.comment}
+        发布：
+        &nbsp;&nbsp;&nbsp;&nbsp;编辑：
+        &nbsp;&nbsp;&nbsp;&nbsp;来源：<br>
+        
     </div><br>
     <!--主内容区 结束-->
     
@@ -113,3 +125,4 @@
         document.getElementById( "time" ).innerHTML=myTime;
     </script>
 </html>
+

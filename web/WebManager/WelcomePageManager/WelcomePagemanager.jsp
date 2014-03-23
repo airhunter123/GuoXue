@@ -11,9 +11,6 @@
         <title>首页内容管理</title>
     </head>
     <body class="bodyStyle">
-        <iframe name="support" style="display:none" ></iframe><!--用于使表单提交后不跳转，本iframe隐藏-->
-        
-        
         
         <div class="tableStyle" style="text-align: center;margin-top: 50px">
             <span style="background-color: #252c24;font-size: 30px;">
@@ -183,7 +180,8 @@
             
         </form>
             <button class="buttonStyle" onclick="formSubmit()">提交</button>
-            <button class="buttonStyle" style="margin-left: 200px">取 消</button>
+            <button class="buttonStyle" style="margin-left: 200px">取消</button>
+            <!--button放在form内，无论有无onclick事件，点击后都会触发submit-->
             <br><br><br><br>
         </div>
     </body>
