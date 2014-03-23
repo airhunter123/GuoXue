@@ -82,23 +82,23 @@
                 <tr title="每种样式对应不同的排版方案，样式0表示无图片，样式1表示包含一张图片，以此类推！">
                     <td>格式：</td>
                     <td>
-                        <select name="article.format" class="selectStyle">
+                        <select id="select" name="article.format" class="selectStyle" onchange="replace()">
                             <option value="0" selected="true">样式0</option>
                             <option value="1">样式1</option>
-                            <option value="2">样式2</option>
+                            <option value="2">样式2(视频页面)</option>
                             <option value="3">样式3</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td valign="top"><span>简介：</span></td><!--valign控制文字位置-->
-                    <td><s:textarea name="article.introduction" cssClass="inputArea1"></s:textarea></td>
+                    <td><textarea name="article.introduction"></textarea></td>
                     <script type="text/javascript">CKEDITOR.replace('article.introduction');</script>
                 </tr>
                 <tr>
-                    <td valign="top">正文：</td>
-                    <td valign="top"><s:textarea id="context" name="article.context" cssClass="inputArea2"></s:textarea></td>
-                    <script type="text/javascript">CKEDITOR.replace('article.context');</script>
+                    <td valign="top" id="tdTitle">正文：</td>
+                    <td valign="top" id="tdContext"><textarea id="context" name="article.context"></textarea></td>
+                    <script type="text/javascript">CKEDITOR.replace('context');</script>
                 </tr>
                 
                 <caption align="bottom" style="background-color: #252c24;margin-top: 20px;">
@@ -109,8 +109,37 @@
         </s:form>
     </body>
     <script language="JavaScript">
-        function test(){
-            alert("ok!");
+        function replace(){
+            var select=document.getElementById("select");
+            var td=document.getElementById("tdContext")//获取编辑器父组件
+            
+            if(select.value=="2"){
+                var ck=document.getElementById("cke_context");//获取编辑器组件
+                var text=document.getElementById("context");//获取老文本域
+                td.removeChild(ck);//移除老组件，替换新组件
+                td.removeChild(text);
+                
+                var input=document.createElement("input");//创建新文本框
+                input.setAttribute("id","contextInput");
+                input.setAttribute("name", "article.context");
+                input.setAttribute("class", "inputStyle");
+                input.setAttribute("title","请在本区域输入视频代码");
+                input.style.width="575px";
+                td.appendChild(input);//安装新组建
+                document.getElementById("tdTitle").innerHTML="视频:";
+            }else{
+                var input=document.getElementById("contextInput")
+                if(input!=null){
+                    td.removeChild(input);//移除老组件
+                    
+                    var context=document.createElement("textarea");
+                    context.setAttribute("id", "context");
+                    context.setAttribute("name", "article.context");
+                    td.appendChild(context);
+                    CKEDITOR.replace('context');//安装文本编辑器
+                    document.getElementById("tdTitle").innerHTML="正文:";
+                }
+            }
         }
         function submitCheck(){
             var title=document.getElementById("title");

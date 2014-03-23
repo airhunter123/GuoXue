@@ -15,6 +15,11 @@ public class ArticleShow {
         HttpSession hs=ServletActionContext.getRequest().getSession();
         article=(Article)hs.getAttribute("article");
         System.out.println(article.getAuthor());
-        return "NewsPage1";
+        if(article.getFormat().equals("2")){
+            return "NewsPage2";
+        }else{
+            return "NewsPage1";
+        }
+        
     }
 }

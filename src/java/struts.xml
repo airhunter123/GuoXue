@@ -22,6 +22,7 @@
         
         <action name="articleShow" class="WebRun.ArticleShow">
             <result name="NewsPage1" type="redirect">/NewsPage/NewsPageType1.jsp</result>
+            <result name="NewsPage2" type="redirect">/NewsPage/NewsPageType2.jsp</result>
         </action>
         
         <action name="changeWelcomePage" class="WebManager.ChangeWelcomePage">
