@@ -9,10 +9,9 @@
     <property name="hibernate.connection.password">123456</property>
     <property name="hibernate.show_sql">true</property>
     <property name="format_sql">true</property>
-    
-    <property name="connection.useUnicode">true</property> <!--非常重要！！防乱码-->
-    <property name="connection.characterEncoding">UTF-8</property> 
-    
+    <property name="connection.useUnicode">true</property>
+    <!--非常重要！！防乱码-->
+    <property name="connection.characterEncoding">UTF-8</property>
     <mapping resource="POJO/Article.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
