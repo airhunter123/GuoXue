@@ -15,12 +15,12 @@ a { color:#FFCC00;}
 #slideshow span {display:none}
 #wrapper {width:506px; margin:50px auto; display:none}
 #wrapper * {margin:0; padding:0}
-#fullsize {position:relative; width:500px; height:300px; padding:2px; border:5px solid #f47a20; border-radius: 6px;background:#000}
+#fullsize {position:relative; width:500px; height:300px; padding:2px; border:5px solid #f47a20; border-radius: 6px;background:#000;overflow: hidden }
 #information {font-family: '????';position:absolute; bottom:0; width:500px; height:0; background:#000; color:#edb02b; overflow:hidden; z-index:200; opacity:.7; filter:alpha(opacity=70)}
 #information h3 {padding:4px 8px 3px; font-size:14px}
 #information p {padding:0 8px 8px}
-#image {width:500px}
-#image img {position:absolute; z-index:25; width:auto}
+#image {width:500px;}
+#image img {position:absolute; z-index:25; width:auto;}
 .imgnav {position:absolute; width:25%; height:306px; cursor:pointer; z-index:150}
 #imgprev {left:0; background:url(../pic/showerPic/images/left.gif) left center no-repeat}
 #imgnext {right:0; background:url(../pic/showerPic/images/right.gif) right center no-repeat}
@@ -32,65 +32,65 @@ a { color:#FFCC00;}
 #slideright:hover {background-color:#f47a20}
 #slidearea {float:left; position:relative; width:455px; margin-left:5px; height:100px; overflow:hidden;}
 #slider {position:absolute; left:0; height:100px;}
-#slider img {cursor:pointer; border:3px solid #f47a20;border-radius: 6px; padding:2px}
+#slider img {cursor:pointer; border:3px solid #f47a20;border-radius: 6px; padding:2px;height:75px;}
 </style>
 
 </head>
 <body>
-	<ul id="slideshow">
-		<li>
+    <ul id="slideshow">
+            <li>
 			<h3>TinySlideshow v1</h3>
-			<span>../pic/showerPic/photos/orange-fish.jpg</span>
+                        <span>../pic/showerPic/photos/1.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/orange-fish-thumb.jpg" alt="Orange Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/1.jpg" alt="Orange Fish" /></a>
 		</li>
 		<li>
 			<h3>Sea Turtle</h3>
-			<span>../pic/showerPic/photos/sea-turtle.jpg</span>
+			<span>../pic/showerPic/photos/2.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<img src="../pic/showerPic/thumbnails/sea-turtle-thumb.jpg" alt="Sea Turtle" />
+			<img src="../pic/showerPic/photos/2.jpg" alt="Sea Turtle" />
 		</li>
 		<li>
 			<h3>Red Coral</h3>
-			<span>../pic/showerPic/photos/red-coral.jpg</span>
+			<span>../pic/showerPic/photos/3.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/red-coral-thumb.jpg" alt="Red Coral" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/3.jpg" alt="Red Coral" /></a>
 		</li>
 		<li>
 			<h3>Coral Reef</h3>
-			<span>../pic/showerPic/photos/coral-reef.jpg</span>
+			<span>../pic/showerPic/photos/4.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/coral-reef-thumb.jpg" alt="Coral Reef" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/4.jpg" alt="Coral Reef" /></a>
 		</li>
 		<li>
 			<h3>Blue Fish</h3>
-			<span>../pic/showerPic/photos/blue-fish.jpg</span>
+			<span>../pic/showerPic/photos/5.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<img src="../pic/showerPic/thumbnails/blue-fish-thumb.jpg" alt="Blue Fish" />
+			<img src="../pic/showerPic/photos/5.jpg" alt="Blue Fish" />
 		</li>
 		<li>
 			<h3>TinySlideshow v.2</h3>
-			<span>../pic/showerPic/photos/yellow-fish.jpg</span>
+			<span>../pic/showerPic/photos/6.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/yellow-fish-thumb.jpg" alt="Yellow Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/6.jpg" alt="Yellow Fish" /></a>
 		</li>
 		<li>
 			<h3>Squid</h3>
-			<span>../pic/showerPic/photos/squid.jpg</span>
+			<span>../pic/showerPic/photos/7.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/squid-thumb.jpg" alt="Squid" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/7.jpg" alt="Squid" /></a>
 		</li>
 		<li>
 			<h3>Small Fish</h3>
-			<span>../pic/showerPic/photos/small-fish.jpg</span>
+			<span>../pic/showerPic/photos/8.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/small-fish-thumb.jpg" alt="Small Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/8.jpg" alt="Small Fish" /></a>
 		</li>
                 <li>
 			<h3>Small Fish aaaa</h3>
-			<span>../pic/showerPic/photos/small-fish.jpg</span>
+			<span>../pic/showerPic/photos/9.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/thumbnails/small-fish-thumb.jpg" alt="Small Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photos/9.jpg" alt="Small Fish" /></a>
 		</li>
 	</ul>
 	<div id="wrapper">

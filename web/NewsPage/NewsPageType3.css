@@ -4,8 +4,8 @@ a { color:#FFCC00;}
 #slideshow span {display:none}
 #wrapper {width:506px; margin:50px auto; display:none}
 #wrapper * {margin:0; padding:0}
-#fullsize {position:relative; width:500px; height:300px; padding:2px; border:5px solid #f47a20; border-radius: 6px;background:#000}
-#information {font-family: '微软雅黑';position:absolute; bottom:0; width:500px; height:0; background:#000; color:#edb02b; overflow:hidden; z-index:200; opacity:.7; filter:alpha(opacity=70)}
+#fullsize {position:relative; width:500px; height:300px; padding:2px; border:5px solid #f47a20; border-radius: 6px;background:#000;overflow: hidden;}
+#information {font-family: '微软雅黑';position:absolute; bottom:0; width:500px; height:0; background:#000; color:#edb02b; overflow:hidden; z-index:200; opacity:.7; filter:alpha(opacity=70);text-align: left}
 #information h3 {padding:4px 8px 3px; font-size:14px}
 #information p {padding:0 8px 8px}
 #image {width:500px}
@@ -21,4 +21,4 @@ a { color:#FFCC00;}
 #slideright:hover {background-color:#f47a20}
 #slidearea {float:left; position:relative; width:455px; margin-left:5px; height:100px; overflow:hidden;}
 #slider {position:absolute; left:0; height:100px;}
-#slider img {cursor:pointer; border:3px solid #f47a20;border-radius: 6px; padding:2px}
+#slider img {cursor:pointer; border:3px solid #f47a20;border-radius: 6px; padding:2px;height:75px;}
