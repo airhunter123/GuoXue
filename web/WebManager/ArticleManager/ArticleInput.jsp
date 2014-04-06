@@ -79,14 +79,14 @@
                         </select>
                     </td>
                 </tr>
-                <tr title="每种样式对应不同的排版方案，样式0表示无图片，样式1表示包含一张图片，以此类推！">
+                <tr title="根据需要选择相应的样式">
                     <td>格式：</td>
                     <td>
                         <select id="select" name="article.format" class="selectStyle" onchange="replace()">
                             <option value="0" selected="true">样式0</option>
                             <option value="1">样式1</option>
                             <option value="2">样式2(视频页面)</option>
-                            <option value="3">样式3</option>
+                            <option value="3">样式3(图片页面)</option>
                         </select>
                     </td>
                 </tr>
@@ -127,7 +127,10 @@
                 input.style.width="575px";
                 td.appendChild(input);//安装新组建
                 document.getElementById("tdTitle").innerHTML="视频:";
-            }else{
+            }else if(select.value=="3"){
+                alert("ok");
+            }
+            else{
                 var input=document.getElementById("contextInput")
                 if(input!=null){
                     td.removeChild(input);//移除老组件

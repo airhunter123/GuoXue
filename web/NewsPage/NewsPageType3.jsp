@@ -84,57 +84,57 @@
               <ul id="slideshow">
 		<li>
 			<h3>TinySlideshow v1</h3>
-			<span>../pic/showerPic/photos/1.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/1.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/1.jpg" alt="Orange Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/1.jpg"/></a>
 		</li>
 		<li>
 			<h3>Sea Turtle</h3>
-			<span>../pic/showerPic/photos/2.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/2.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<img src="../pic/showerPic/photos/2.jpg" alt="Sea Turtle" />
+			<img src="../pic/showerPic/photoAll/sample/2.jpg"/>
 		</li>
 		<li>
 			<h3>Red Coral</h3>
-			<span>../pic/showerPic/photos/3.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/3.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/3.jpg" alt="Red Coral" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/3.jpg"/></a>
 		</li>
 		<li>
 			<h3>Coral Reef</h3>
-			<span>../pic/showerPic/photos/4.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/4.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/4.jpg" alt="Coral Reef" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/4.jpg"/></a>
 		</li>
 		<li>
 			<h3>Blue Fish</h3>
-			<span>../pic/showerPic/photos/5.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/5.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<img src="../pic/showerPic/photos/5.jpg" alt="Blue Fish" />
+			<img src="../pic/showerPic/photoAll/sample/5.jpg"/>
 		</li>
 		<li>
 			<h3>TinySlideshow v.2</h3>
-			<span>../pic/showerPic/photos/6.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/6.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/6.jpg" alt="Yellow Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/6.jpg"/></a>
 		</li>
 		<li>
 			<h3>Squid</h3>
-			<span>../pic/showerPic/photos/7.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/7.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/7.jpg" alt="Squid" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/7.jpg"/></a>
 		</li>
 		<li>
 			<h3>Small Fish</h3>
-			<span>../pic/showerPic/photos/8.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/8.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/8.jpg" alt="Small Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/8.jpg"/></a>
 		</li>
                 <li>
 			<h3>Small Fish aaaa</h3>
-			<span>../pic/showerPic/photos/9.jpg</span>
+			<span>../pic/showerPic/photoAll/sample/9.jpg</span>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut urna. Mauris nulla. Donec nec mauris. Proin nulla dolor, bibendum et, dapibus in, euismod ut, felis.</p>
-			<a href="#"><img src="../pic/showerPic/photos/9.jpg" alt="Small Fish" /></a>
+			<a href="#"><img src="../pic/showerPic/photoAll/sample/9.jpg"/></a>
 		</li>
 	</ul>
 	<div id="wrapper">
